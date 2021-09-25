@@ -35,7 +35,7 @@ const capacitySelect = adForm.querySelector('#capacity');
 
 const onRoomsNumberSelect = () => {
   const seatingCapacityOptions = capacitySelect.querySelectorAll('option');
-  const roomsNumber =  Number(roomsNumberSelect.value);
+  const roomsNumber = Number(roomsNumberSelect.value);
   const possibleCapacities = RoomCapacities[roomsNumber];
 
   seatingCapacityOptions.forEach((option) => {
@@ -103,7 +103,7 @@ const onTitleInputBlur = () => {
 };
 
 const onPriceInput = () => {
-  const price =priceInput.value;
+  const price = priceInput.value;
   const type = typeField.value;
   const minPrice = MinPrices[type];
 

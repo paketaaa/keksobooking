@@ -29,7 +29,7 @@ const getRoomsNumber = (rooms) => {
   return `${rooms} комнат`;
 };
 
-const showAlert = (message='Не удалось загрузить данные') => {
+const showAlert = (message = 'Не удалось загрузить данные') => {
   return () => {
     const alertContainer = document.createElement('div');
     alertContainer.style.display = 'block';

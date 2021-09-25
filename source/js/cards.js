@@ -36,7 +36,7 @@ const setAdFeatures = (featuresElement, offer) => {
   }).join('');
 };
 
-const createCardElement = ({author, offer}) => {
+const createCardElement = ({ author, offer }) => {
   const cardElement = cardTemplate.cloneNode(true);
 
   cardElement.querySelector('.popup__title').textContent = offer.title;

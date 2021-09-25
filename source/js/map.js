@@ -20,7 +20,7 @@ const onPinMove = (evt) => {
 };
 
 const renderCards = (advertisements) => {
-  advertisements.forEach(({author, location, offer}) => {
+  advertisements.forEach(({ author, location, offer }) => {
     const icon = L.icon({
       iconUrl: 'img/pin.svg',
       iconSize: [POINTER_WIDTH, POINTER_WIDTH],
@@ -41,7 +41,7 @@ const renderCards = (advertisements) => {
     marker
       .addTo(map)
       .bindPopup(
-        createCardElement({author, offer}),
+        createCardElement({ author, offer }),
         {
           keepInView: true,
         },
