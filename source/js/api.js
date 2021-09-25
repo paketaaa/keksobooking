@@ -1,6 +1,6 @@
 const getData = (url, onSuccess, onFail) => {
   fetch(url)
-    .then ((response => {
+    .then((response => {
       if (response.ok) {
         return response.json();
       }
@@ -29,3 +29,5 @@ const sendData = (url, onSuccess, onFail, body) => {
 
 
 export { getData, sendData };
+
+// test123
